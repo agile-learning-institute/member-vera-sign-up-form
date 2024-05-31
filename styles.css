@@ -6,3 +6,20 @@
   h1 {
     font-family: Norse-Bold, sans-serif;
   }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .left {
+    background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+    width: 35vw;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
