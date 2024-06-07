@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js"></script>
@@ -14,7 +13,7 @@
         <div class="left">
             <div class="forImage">
                 <img src="./images/odin-lined.png" alt="Odin Logo" height="100px">
-                <h1 class="title">Odin</h1>
+                <h1 class="title">ODIN</h1>
             </div>
         </div>
         <div class="forFooter">
@@ -23,7 +22,8 @@
         </div>
         <div class="right">
             <div class="first">
-                <h3> This is not a real online service! You know you need something <br />
+                <h3>
+                    This is not a real online service! You know you need something <br />
                     like this in your life to help you realize your deepest dreams. <br />
                     Sign up <em now></em> to get started. <br />
                     <br /><br />
@@ -32,7 +32,7 @@
             </div>
             <form action="" method="get">
                 <div class="second">
-                    <h3 style="margin-left: 70px; padding-top: 20px;">Let's do this!</h3>
+                    <h3 style="margin-left: 50px; padding-top: 20px;">Let's do this!</h3>
                     <div class="main-form-div">
                         <div class="form-divs">
                             <div class="form-div">
@@ -46,7 +46,10 @@
                             <div classs="form-div">
                                 <label class="password">PASSWORD:</label>
                                 <input type="password" id="password" name="password">
+                                <p id="error">*password do not match</p>
                             </div>
+                        </div>
+                        <div class="form-divs">
                             <div class="form-div">
                                 <label for="lastName">LAST NAME:</label>
                                 <input type="text" id="lastName" name="lastName">
@@ -62,14 +65,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="third"></div>
-                <button></button>
+                <div class="third">
+                <button type="submit" class="btn-green">Create Account</button>
+                </div>
+            </form>
+            <div class="hyperlink">
+                <p>Already have an account? <a class="login" href="">Log In</a></p>
+            </div>
         </div>
-        </form>
-        <div class="hyperlink">
-            <p>Already have an account? <a class="login" href="">Log In</a></p>
-        </div>
-    </div>
     </div>
 </body>
 
