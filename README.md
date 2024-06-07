@@ -29,3 +29,7 @@ The Sign-Up Form project is a simple web form designed to allow users to sign up
 ## Contributing
 
 Contributions are welcome! Please feel free to make suggestions.
+
+## Acknowledgements
+
+- The Odin Project for providing the project specifications and learning resources.
