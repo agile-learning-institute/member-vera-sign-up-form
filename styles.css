@@ -1,6 +1,6 @@
 @font-face {
     font-family: Norse-Bold;
-    src: url(../fonts/Norse=Bold.otf);
+    src: url(./fonts/Norse-Bold.otf);
   }
 
   body {
@@ -34,7 +34,7 @@
   }
 
   .first {
-    height: 25vh;
+    height: 30vh;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -151,10 +151,10 @@
   }
   
   h1{
-    font-size: 50px;
+    font-size: 100px;
     font-family: Norse-Bold;
     margin-top: 55px;
     margin-bottom: 15px;
-    padding-left: 50px;
+    padding-left: 5px;
 }
   
