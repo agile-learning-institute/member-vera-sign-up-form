@@ -90,6 +90,11 @@
     margin: 19px;
   }
 
+  button:hover {
+    background-color: #218838;
+  }
+  
+
   .btn-green {
     background-color: #596D48;
     color: white;

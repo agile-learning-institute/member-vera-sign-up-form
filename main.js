@@ -1,16 +1,30 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let password = document.querySelector("#password").value;
-    let confirmPassword = document.querySelector("#confirmPassword").value;
-    
-    let error = document.querySelector("#error");
+    const form = document.querySelector("form");
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+    const error = document.getElementById("error");
 
-    if(password == "" && confirmPassword == ""){
-        error.innerHTML = "*passwords do not match";
-    }
-    else if(password === confirmPassword){
-        error.innerHTML = "";
-    }
+    error.style.display = "none"; 
 
-    console.log("hi")
-})
+    form.addEventListener("submit", function(event) {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            error.style.display = "block";
+            event.preventDefault(); 
+        } else {
+            error.style.display = "none";
+        }
+    });
+
+    passwordInput.addEventListener("input", function() {
+        if (passwordInput.value === confirmPasswordInput.value) {
+            error.style.display = "none";
+        }
+    });
+
+    confirmPasswordInput.addEventListener("input", function() {
+        if (passwordInput.value === confirmPasswordInput.value) {
+            error.style.display = "none";
+        }
+    });
+});
