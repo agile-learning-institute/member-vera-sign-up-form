@@ -5,74 +5,75 @@
     <meta charset="UTF-8" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
 </head>
 
 <body>
     <div class="main">
         <div class="left">
             <div class="forImage">
-                <img src="./images/odin-lined.png" alt="Odin Logo" height="100px">
+                <img src="./images/odin-lined.png" alt="Odin Logo" height="200px">
                 <h1 class="title">ODIN</h1>
             </div>
-        <div class="forFooter">
-            <p class="p-footer">Photo by <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA">Halie
-                    West</a> on <a class="a-footer" href="unsplash.com">Unsplash</a></p>
-        </div>
-        <div class="right">
-            <div class="first">
-                <h3>
-                    This is not a real online service! You know you need something <br />
-                    like this in your life to help you realize your deepest dreams. <br />
-                    Sign up <em now></em> to get started. <br />
-                    <br /><br />
-                    You <em know></em> you want to.
-                </h3>
+            <div class="forFooter">
+                <p class="p-footer">Photo by <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA">Halie
+                        West</a> on <a class="a-footer" href="unsplash.com">Unsplash</a></p>
             </div>
-            <form action="" method="get">
-                <div class="second">
-                    <h3 style="margin-left: 50px; padding-top: 20px;">Let's do this!</h3>
-                    <div class="main-form-div">
-                        <div class="form-divs">
-                            <div class="form-div">
-                                <label for="firstName">FIRST NAME:</label>
-                                <input type="text" id="firstName" name="firstName">
+        </div> 
+            <div class="right">
+                <div class="first">
+                    <h2>
+                        This is not a real online service! You know you need something <br />
+                        like this in your life to help you realize your deepest dreams. <br />
+                        Sign up <em now></em> to get started. <br />
+                        <br /><br />
+                        You <em know></em> you want to.
+                    </h2>
+                </div>
+                <form action="" method="get">
+                    <div class="second">
+                        <h3 style="margin-left: 50px; padding-top: 20px;">Let's do this!</h3>
+                        <div class="main-form-div">
+                            <div class="form-divs">
+                                <div class="form-div">
+                                    <label for="firstName">FIRST NAME:</label>
+                                    <input type="text" id="firstName" name="firstName" required tabindex="1">
+                                </div>
+                                <div class="form-div">
+                                    <label for="email">EMAIL:</label>
+                                    <input type="email" id="email" name="email" required tabindex="3">
+                                </div>
+                                <div classs="form-div">
+                                    <label class="password">PASSWORD:</label>
+                                    <input type="password" id="password" name="password" required tabindex="5" required>
+                                    <p id="error">*password do not match</p>
+                                </div>
                             </div>
-                            <div class="form-div">
-                                <label for="email">EMAIL:</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div classs="form-div">
-                                <label class="password">PASSWORD:</label>
-                                <input type="password" id="password" name="password">
-                                <p id="error">*password do not match</p>
-                            </div>
-                        </div>
-                        <div class="form-divs">
-                            <div class="form-div">
-                                <label for="lastName">LAST NAME:</label>
-                                <input type="text" id="lastName" name="lastName">
-                            </div>
-                            <div class="form-div">
-                                <label class="phone-number">PHONE NUMBER:</label>
-                                <input type="tel" id="phone-number" name="phone-number">
-                            </div>
-                            <div classs="form-div">
-                                <label class="confirmPassword">CONFIRM PASSWORD:</label>
-                                <input type="password" id="confirmPassword" name="confirmPassword">
+                            <div class="form-divs">
+                                <div class="form-div">
+                                    <label for="lastName">LAST NAME:</label>
+                                    <input type="text" id="lastName" name="lastName" required tabindex="2">
+                                </div>
+                                <div class="form-div">
+                                    <label class="phone-number">PHONE NUMBER:</label>
+                                    <input type="tel" id="phone-number" name="phone-number" required tabindex="4">
+                                </div>
+                                <div classs="form-div">
+                                    <label class="confirmPassword">CONFIRM PASSWORD:</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required tabindex="6">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="third">
+                        <button type="submit" class="btn-green">Create Account</button>
+                    </div>
+                </form>
+                <div class="hyperlink">
+                    <p>Already have an account? <a class="login" href="">Log In</a></p>
                 </div>
-                <div class="third">
-                <button type="submit" class="btn-green">Create Account</button>
-                </div>
-            </form>
-            <div class="hyperlink">
-                <p>Already have an account? <a class="login" href="">Log In</a></p>
             </div>
         </div>
-    </div>
+        <script src="main.js"></script>
 </body>
 
 </html>
